@@ -39,33 +39,42 @@
 
 .side-bar{
     margin-top: 50px;
-    width: 70px; /* Ancho inicial del aside */
+    width: 100px; /* Ancho inicial del aside */
     height: 100%;
     background-color: #333;
-    color: #fff;
+    color: #000000;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    transition: width 0.3s; /* Agrega una transición de ancho para la animación */
+    transition: width 0.5s; /* Agrega una transición de ancho para la animación */
     overflow-x: hidden; /* Evita que el contenido desborde horizontalmente al contraerse */
 }
 
 .inside-aside{
-    margin-top: 10px;
+    margin-top: 20px;
+
+}
+ul{
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Utiliza flexbox para alinear verticalmente los elementos de la lista */
+    flex-direction: column; /* Alinea los elementos verticalmente en una columna */
+    align-items: center;
 }
 .opciones {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 20px;
+    /* text-align: center; */
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 4px; /* Define el ancho del borde, ajusta según tus necesidades */
+    height: 55px; /* Define la altura, ajusta según tus necesidades */
+    width: 75px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Alinea horizontalmente el contenido al centro */
+    justify-content: center;
 }
-/* .navigation {
-    margin-top: 60px;
-    background-color: #24262d;
-    width: 200px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    transition: left 0.3s ease-out;
-    -webkit-transition: left 0.3s ease-out;
-} */

@@ -1,61 +1,77 @@
 <app-navbar></app-navbar>
+
+
+
 <section class="content">
-<div class="container-fluid">
-    <div class="row m-t-sm">
-        <div class="col-md-15">
-            <div class="panel">
-                <div class="panel-body">
-                    <div class="col-md-12 col-sm-12" id="list_alumnos">
-                        <div class="panel panel-filled">
-                            <div class="panel-body">
 
-                                <div class="row">
-                                    <div class="col-sm-10">
-                                        <h5 class="m-t-xs">Productos Registrados</h5>
-                                    </div>
-                                    <div class="col-sm-2 text-right">
-                                        <div class="panel-body buttons-margin">
-                                            <a id="btnNuevo" class="btn btn-w-md btn-info"
-                                                routerLink="/crear-productos">Nuevo Producto</a>
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="">
+        <div class="busqueda">
+            <form class="form-buscar">
+                <input>
+                <button class="btn btnstart" type="submit" >Buscar</button>
+            </form>
+        </div>
+        <div class="choise">
+            <div class="nav-choise" role="tablist">
+                <button class="tab-button active" data-tab="nav-home">Inicio</button>
+                <button class="tab-button" data-tab="nav-inst">Instituto</button>
+                <button class="tab-button" data-tab="nav-prec">Precio</button>
+                <button class="tab-button" data-tab="nav-ofertas">Ofertas</button>
+                <button class="tab-button" data-tab="nav-servicios">Servicios</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="nav-home">
+                    <div class="texto">
+                        <p>"¡Bienvenido a IDEAL ROOM, Tu solución para una búsqueda de alojamiento estudiantil más fácil y conveniente. Encuentra tu lugar ideal cerca de tu institución educativa de manera rápida y eficiente con nuestra aplicación. ¡Comienza a explorar ahora y simplifica tu búsqueda de alojamiento estudiantil!</p>
+                    </div>
 
-                                <div class="table-responsive">
-                                    <table *ngIf="listProductos.length > 0" class="table table-hover table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Categoria</th>
-                                                <th>Ubicacion</th>
-                                                <th>Precio</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="datos">
-                                            <tr *ngFor="let producto of listProductos">
-                                                <td>{{ producto.producto }}</td>
-                                                <td>{{ producto.categoria }}</td>
-                                                <td>{{ producto.ubicacion }}</td>
-                                                <td>{{ producto.precio | currency: 'S/.' }}</td>
-                                                <td>
-                                                    <i (click)="eliminarProducto(producto._id)" style="font-size: 25px;" class="pe pe-7s-trash text-accent"></i>&nbsp;&nbsp;
-                                                    <i [routerLink]="['/editar-producto', producto._id]" style="font-size: 25px;" class="pe pe-7s-pen text-accent"></i>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="card">
+                                <img  src="https://thumbs.dreamstime.com/b/un-cuarto-vac%C3%ADo-99662230.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="oferta-title">Cuarto de 2 x 3</h5>
+                                    <div class="oferta-descripcion">
+                                        <p>A 3 kilometros</p>
+                                        <p>Tecsup - Lima</p>
+                                        <p>S/ 300</p>
+                                    </div>
+                                    <div class="boton">
+                                        <a href="#" class="btn btn-ver">Ver alojamiento</a>
+                                    </div>
                                 </div>
-                                <br>
-                                <div class="text-right font-bold c-white y-value">
-                                    <div id="val_a">Total Productos: {{elementos}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <img  src="https://thumbs.dreamstime.com/b/un-cuarto-vac-o-cuartos-os-en-una-decoraci-n-que-espera-de-la-casa-para-155699861.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="oferta-title">Habitacion de 4 x 3</h5>
+                                    <div class="oferta-descripcion">
+                                        <p>A 3 kilometros</p>
+                                        <p>Tecsup - Lima</p>
+                                        <p>S/ 300</p>
+                                    </div>
+                                    <div class="boton">
+                                        <a href="#" class="btn btn-ver">Ver alojamiento</a>
+                                    </div>
                                 </div>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="tab-pane" id="nav-inst">Contenido del Instituto</div>
+                <div class="tab-pane" id="nav-prec">Contenido de Precio</div>
+                <div class="tab-pane" id="nav-ofertas">Contenido de Ofertas</div>
+                <div class="tab-pane" id="nav-servicios">Contenido de Servicios</div>
             </div>
+            
+        </div>
+
+        <div>
         </div>
     </div>
-</div>
+
 </section>

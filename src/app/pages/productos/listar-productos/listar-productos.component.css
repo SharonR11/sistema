@@ -1,0 +1,156 @@
+.content:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(106, 223, 66, 0.4), rgba(0, 74, 217, 0.5));
+
+}
+
+.busqueda{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    height: 18vh;
+    left: 0px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 2px solid #ccc; /* Define un borde personalizado (puedes ajustar el color y el grosor según tus preferencias) */
+    outline: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 15px; /* Agrega espacio interno para que el texto no esté pegado al borde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+.btnstart {
+    background: radial-gradient(circle, #F1C3A2, #FE9E75); /* Color naranja */
+    border-radius: 22px; /* Ajusta el valor según el grado de redondez deseado */
+    color: #fff; /* Color del texto en blanco */
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    font-size: 13px; /* Tamaño de fuente */
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+
+.btnstart:hover {
+    background-color: #ffa0a0; /* Cambiar el color de fondo al pasar el cursor */
+    border: 2px solid rgb(228, 138, 126); /* Cambiar el color del borde al pasar el cursor */
+}
+
+.choise{
+    display: flex;
+    max-width: 100%; /*no cambiar */
+    padding: 10px;
+    left: 0px;
+    right: 0;
+    position: absolute;
+    justify-content: center;
+}
+.nav-choise {
+    display: flex;
+    max-width: max-content;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+    
+    background-color: rgba(240, 240, 240, 0.7);
+    border: 1px solid #050404;
+    border-radius: 10px 10px 0 0;
+    padding: 0px;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    max-width: 100px;
+    
+}
+
+.tab-button.active {
+    background-color: #f0f0f0;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #657ed7;
+    
+}
+
+.tab-content {
+    margin-top: 60px;
+    height: 30px;
+    width: 600px;
+    max-width: 100%;
+    position: absolute;
+    font-family: sans-serif;
+
+}
+.tab-pane {
+    display: none;
+}
+.texto{
+    border: 2px solid #F1F1F1;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+.card-img-top {
+    height: 100px; /* Establece la altura deseada */
+    width: 291px;  /* Establece el ancho deseado */
+    border-radius: 25px 25px 0 0;
+}
+.card{
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-body{
+    padding: 15px;
+}
+.oferta-title{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.oferta-descripcion{
+    margin-left: 6px;
+    font-family: sans-serif;
+    font-weight: lighter; 
+    line-height: 0.9;
+    margin-bottom: 0.1px;
+}
+.btn-ver{
+    background: radial-gradient(circle, #F1C3A2, #FE9E75); /* Color naranja */
+    border-radius: 22px; /* Ajusta el valor según el grado de redondez deseado */
+    color: #fff; /* Color del texto en blanco */
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    font-size: 10px; /* Tamaño de fuente */
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.boton{
+    text-align: right;
+}
