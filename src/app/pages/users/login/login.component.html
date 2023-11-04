@@ -16,10 +16,14 @@
                     <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
 
                         <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1">Usuario</span>
-                                <input type="text" class="form-control" placeholder="Usuario" formControlName="username"title="Please enter you username">
+                            <div class="form-registro">
+                                <div>
+                                    <span class="span-izquierda">Usuario </span>
+                                </div>
+                                <div class="division"></div>
+                                <input class="span-derecha" type="text" id="username" title="Ingrese su Usuario"  formControlName="username" placeholder="Usuario"> 
                             </div>
+
                             <div>
                                 <div *ngIf="loginForm.get('username')?.hasError('required') 
                                     && loginForm.get('username')?.touched; else validUser">
@@ -29,7 +33,7 @@
                                 </div>
                                 <ng-template #validUser>
                                     <div>
-                                        <span class="help-block">Ingrese su Usuario</span>
+                                        <span class="help-block small">Ingrese su Usuario</span>
                                     </div>
                                 </ng-template>
                                 
@@ -37,9 +41,12 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="input-group ">
-                                <span class="input-group-text" id="basic-addon1">Contraseña</span>
-                                <input type="password" formControlName="password" title="Please enter your password" placeholder="******" class="form-control">
+                            <div class="form-registro">
+                                <div>
+                                    <span class="span-izquierda">Contraseña </span>
+                                </div>
+                                <div class="division"></div>
+                                <input class="span-derecha" title="Ingrese su contraseña"  type="password" id="password" formControlName="password" placeholder="*****"> 
                             </div>
                             <div>
                                 <div *ngIf="loginForm.get('password')?.hasError('required') 

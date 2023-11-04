@@ -45,7 +45,7 @@ h5 {
 .header-title {
     position: relative;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-family: sans-serif;
     font-weight: bold;
 }
@@ -74,9 +74,57 @@ h5 {
     display: inline-block;
     font-size: 15px; /* Tamaño de fuente */
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .btnstart:hover {
     background-color: #FFD700; /* Cambiar el color de fondo al pasar el cursor */
     border: 2px solid #FFD700; /* Cambiar el color del borde al pasar el cursor */
+}
+
+
+.form-registro {
+
+    position: relative;
+    width: 320px; 
+    height: 54px;
+    background: white;
+    border-radius: 10px; 
+    border: 1px rgba(0, 0, 0, 0.10) solid;
+    margin-bottom: 5px;
+
+}
+.span-izquierda{
+    left: 14px; 
+    top: 20px; 
+    position: relative; 
+    color: #6D7278; 
+    font-size: 12px; 
+    font-family: Inter; 
+    width: 74px;
+
+}
+.division{
+    width: 1px;
+    height: 24px;
+    left: 115px;
+    top: 15px; 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.10)
+}
+.span-derecha{
+    left: 125px; 
+    top: 20px; 
+    position: absolute; 
+    color: #6D7278; 
+    font-size: 12px; 
+    font-family: Inter; 
+    word-wrap: break-word;
+}
+
+
+input{
+    border: 0px solid #ccc; /* Define un borde personalizado (puedes ajustar el color y el grosor según tus preferencias) */
+    outline: none;
+    width: 180px;
 }
