@@ -53,6 +53,53 @@ small {
     margin: 10% auto 0;
 }
 
+.form-registro {
+
+    position: relative;
+    width: 287px; 
+    height: 54px;
+    background: white;
+    border-radius: 10px; 
+    border: 1px rgba(0, 0, 0, 0.10) solid;
+    margin-bottom: 15px;
+
+}
+.span-izquierda{
+    left: 14px; 
+    top: 20px; 
+    position: relative; 
+    color: #6D7278; 
+    font-size: 12px; 
+    font-family: Inter; 
+    width: 74px;
+
+}
+.division{
+    width: 1px;
+    height: 24px;
+    left: 74px;
+    top: 15px; 
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.10)
+}
+.span-derecha{
+    left: 85px; 
+    top: 20px; 
+    position: absolute; 
+    color: #6D7278; 
+    font-size: 12px; 
+    font-family: Inter; 
+    word-wrap: break-word;
+}
+
+
+input{
+    border: 0px solid #ccc; /* Define un borde personalizado (puedes ajustar el color y el grosor según tus preferencias) */
+    outline: none;
+    width: 180px;
+}
+
+
 .btnstart {
     background: radial-gradient(circle, #F1C3A2, #FE9E75); /* Color naranja */
     border-radius: 22px; /* Ajusta el valor según el grado de redondez deseado */
