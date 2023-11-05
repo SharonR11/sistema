@@ -65,19 +65,20 @@ small {
 
 }
 .span-izquierda{
-    left: 14px; 
+    left: 12px; 
     top: 20px; 
     position: relative; 
     color: #6D7278; 
     font-size: 12px; 
-    font-family: Inter; 
-    width: 74px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 80px;
 
 }
 .division{
     width: 1px;
     height: 24px;
-    left: 115px;
+    left: 120px;
     top: 15px; 
     position: absolute; 
     background: rgba(0, 0, 0, 0.10)
@@ -88,7 +89,8 @@ small {
     position: absolute; 
     color: #6D7278; 
     font-size: 12px; 
-    font-family: Inter; 
+    font-family: sans-serif;
+    font-weight: lighter;
     word-wrap: break-word;
 }
 
